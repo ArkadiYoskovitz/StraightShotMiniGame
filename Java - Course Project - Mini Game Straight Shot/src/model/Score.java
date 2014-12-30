@@ -13,7 +13,7 @@ import utilities.UtilityHelper;
 public class Score {
 
 	// Attribute
-	private Target target;
+	private final Target target;
 	private int guess;
 	private int countBullsEye;
 	private int countHit;
@@ -44,10 +44,6 @@ public class Score {
 	// Access Methods
 	public Target getTarget() {
 		return target;
-	}
-
-	public void setTarget(Target target) {
-		this.target = target;
 	}
 
 	public int getGuess() {

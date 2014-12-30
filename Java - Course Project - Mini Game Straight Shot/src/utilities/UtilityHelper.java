@@ -40,6 +40,7 @@ public final class UtilityHelper {
 		int number = Integer.parseInt(s);
 		return toArray(number);
 	}
+	
 	public static boolean isNumeric(String str)  {  
 		try {  
 			double number = Double.parseDouble(str);
@@ -67,5 +68,4 @@ public final class UtilityHelper {
 		}  
 		return true;  
 	}
-
 }

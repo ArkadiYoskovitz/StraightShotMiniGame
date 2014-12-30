@@ -59,6 +59,7 @@ public class ScoreView extends JPanel implements ListCellRenderer<Object> {
 	public Dimension getPreferredSize() {
 		return new Dimension(width, height);
 	}
+	
 	/**
 	 * Completely bypass all of the standard JComponent painting machinery.
 	 * This is a special case: the renderer is guaranteed to be opaque,

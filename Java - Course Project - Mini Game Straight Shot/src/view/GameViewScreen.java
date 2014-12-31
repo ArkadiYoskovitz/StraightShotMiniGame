@@ -7,7 +7,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.Iterator;
 
 import javax.swing.AbstractAction;
 import javax.swing.DefaultListModel;
@@ -210,9 +210,9 @@ public class GameViewScreen extends JFrame {
 
 	public void updateListModel(ArrayList<Score> gameResults) {
 		DefaultListModel<Score> dml = new DefaultListModel<Score>();
-		Collections.reverse(gameResults);
-		for (Score score : gameResults) {
-			dml.addElement(score);	
+		for (Iterator<Score> iterator = gameResults.iterator(); iterator.hasNext();) {
+			Score score = (Score) iterator.next();
+			dml.addElement(score);
 		}
 		getList().setModel(dml);
 	}

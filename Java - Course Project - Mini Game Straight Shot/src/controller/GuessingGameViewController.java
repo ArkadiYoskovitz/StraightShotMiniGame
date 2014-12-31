@@ -74,7 +74,7 @@ public class GuessingGameViewController implements ActionListener {
 				
 				String guess = getView().getTxtEnterGuess().getText();
 				
-				boolean flagNumeric = UtilityHelper.isIntNumeric(guess);
+				boolean flagNumeric = UtilityHelper.isNumeric(guess);
 				
 				if (guess.isEmpty() || !flagNumeric) {
 					setBadInput();

@@ -85,7 +85,7 @@ public class GuessingGame {
 		
 		Score newScore = new Score(getGameTarget(),guess);
 		
-		getGameResults().add(newScore);
+		getGameResults().add(0,newScore);
 
 		if (newScore.getCountBullsEye() == 4) {
 			setActive(false);

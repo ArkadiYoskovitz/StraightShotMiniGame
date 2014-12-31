@@ -1,6 +1,7 @@
 package utilities;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public final class UtilityHelper {
 	
@@ -42,30 +43,9 @@ public final class UtilityHelper {
 	}
 	
 	public static boolean isNumeric(String str)  {  
-		try {  
-			double number = Double.parseDouble(str);
-			int numDigits = (int) Math.floor( Math.log10(number) + 1 );
-
-			if (numDigits != 4) {
-				return false;
-			} 
-		} catch(NumberFormatException nfe) {  
-			return false;
-		}  
-		return true;  
-	}
-
-	public static boolean isIntNumeric(String str)  {  
-		try {  
-			int number = Integer.parseInt(str);
-			int numDigits = (int) Math.floor( Math.log10(number) + 1 );
-
-			if (numDigits != 4) {
-				return false;
-			} 
-		} catch(NumberFormatException nfe) {  
-			return false;
-		}  
-		return true;  
+		Scanner scanner = new Scanner(str);
+		boolean flag = scanner.hasNextInt();
+		scanner.close();
+		return flag;  
 	}
 }

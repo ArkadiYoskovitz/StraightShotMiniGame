@@ -76,7 +76,7 @@ public class GuessingGameViewController implements ActionListener {
 				
 				boolean flagNumeric = UtilityHelper.isNumeric(guess);
 				
-				if (guess.isEmpty() || !flagNumeric) {
+				if (guess.isEmpty() || (guess.length() !=4) || !flagNumeric) {
 					setBadInput();
 				} else {
 					if (!UtilityHelper.hasDistinctDigits(Integer.parseInt(guess))) {
@@ -84,6 +84,7 @@ public class GuessingGameViewController implements ActionListener {
 					} else {
 						getGame().calculateGuessState(guess);
 						updateUI();
+						getView().getTxtEnterGuess().setText(null);
 					}
 				}
 				

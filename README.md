@@ -9,7 +9,7 @@ My version is a single player version build in java using the swing library.
 
 Not all that exiting, but it was an academic exercise for one of my courses.
 
-NOTE: Contains an example for a non jlable bases ListCellRenderer implementation, thats not that comman on line.
+NOTE: Contains an example for a non Jlable bases ListCellRenderer implementation, thats not that common on line.
 
 You're more then welcome to it.
 

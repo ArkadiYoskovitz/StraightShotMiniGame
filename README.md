@@ -7,7 +7,7 @@ for more on Bulls and Cows see: http://en.wikipedia.org/wiki/Bulls_and_cows
 
 My version is a single player version build in java using the swing library.
 
-Not all that exiting, but it was an academic exercise for one of my courses.
+Not all that exciting, but it was an academic exercise for one of my courses.
 
 NOTE: Contains an example for a non Jlable bases ListCellRenderer implementation, thats not that common on line.
 
